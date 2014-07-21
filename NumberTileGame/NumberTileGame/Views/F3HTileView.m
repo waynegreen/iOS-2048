@@ -48,6 +48,7 @@
                                                                frame.size.height)];
     label.textAlignment = NSTextAlignmentCenter;
     label.minimumScaleFactor = 0.5;
+    label.backgroundColor = [UIColor clearColor];
     [self addSubview:label];
     self.numberLabel = label;
     return self;
@@ -59,6 +60,7 @@
         self.backgroundColor = [delegate tileColorForValue:self.tileValue];
         self.numberLabel.textColor = [delegate numberColorForValue:self.tileValue];
         self.numberLabel.font = [delegate fontForNumbers];
+        self.numberLabel.minimumScaleFactor = 0.5;
     }
 }
 

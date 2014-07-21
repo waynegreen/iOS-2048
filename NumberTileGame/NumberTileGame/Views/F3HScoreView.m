@@ -25,6 +25,7 @@
     view.layer.cornerRadius = radius;
     view.backgroundColor = color ?: [UIColor whiteColor];
     view.userInteractionEnabled = YES;
+    view.scoreLabel.backgroundColor = [UIColor clearColor];
     if (textColor) {
         view.scoreLabel.textColor = textColor;
     }
